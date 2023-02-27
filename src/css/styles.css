@@ -52,10 +52,10 @@ section {
 
 .text-section {
     overflow: hidden;
-    padding: 2rem 0rem;
+    padding: 4rem 0rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -67,7 +67,9 @@ h1 {
 
 .faq-container {
     overflow: hidden;
-    height: 350px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
 }
 
 .faq {
@@ -76,6 +78,8 @@ h1 {
     padding: 0.2rem;
     padding-right: 1rem;
     cursor: pointer;
+}
+.faq *{
     transition: all 0.2s ease;
 }
 
@@ -93,8 +97,9 @@ h1 {
 }
 
 .faq-description {
-    color: hsl(240, 6%, 50%);
-    display: none;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
 }
 
 .active .faq-title {
@@ -102,7 +107,9 @@ h1 {
 }
 
 .active .faq-description {
-    display: block;
+    color: hsl(240, 6%, 50%);
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .active .faq-title img {
