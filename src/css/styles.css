@@ -12,7 +12,7 @@ main {
     background: white;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     display: flex;
-    font-size: 12px;
+    font-size: 13px;
     color: hsl(238, 29%, 16%);
     position: relative;
     max-width: 87.5%;
